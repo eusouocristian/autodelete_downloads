@@ -17,7 +17,7 @@ home = str(Path.home())
 my_path = home + '/Downloads/'
 # Change the current work path to avoid errors
 os.chdir(my_path)
-# Buinding a list of all filenames and folder names
+# Builnding a list of all filenames and folder names
 files_or_folders = [f for f in listdir(my_path)]
 # Sorting the list by the creation time
 files_or_folders.sort(key=os.path.getctime, reverse=True)
